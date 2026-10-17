@@ -113,6 +113,11 @@
     </script>
 
     <script src="lightbox-plus-jquery.min.js"></script>
+    <script>
+        if (window.lightbox) {
+            lightbox.option({ albumLabel: "Imagen %1 de %2" });
+        }
+    </script>
 
 </body>
 

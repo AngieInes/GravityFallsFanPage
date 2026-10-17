@@ -408,6 +408,35 @@ textarea {
     margin: 10px 0;
 }
 
+input,
+textarea {
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f8d460;
+    color: #2b2b2b;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+#formMessage {
+    text-align: center;
+    margin: 10px 0;
+    color: #f8d460;
+}
+
 /*teorias*/
 .teorias p {
     margin: 5px;
