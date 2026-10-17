@@ -7,68 +7,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fontawesome.com/icons/circle-up?f=classic&s=solid">
     <link href="css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/css.css">
 
-    <meta name="Creacion" content="seccion que explica la creacion y origen de la serie Gravity Falls">
-    <title>Creacion de Gravity Falls</title>
+    <meta name="description" content="Libros, juguetes, videojuegos y ropa de la serie Gravity Falls.">
+    <title>Merchandising de Gravity Falls</title>
 </head>
 
 <body>
     <header>
         <h1>Merchandising</h1>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="Abrir menú"><i class="fa fa-bars"></i></a>
         <nav id="menu_bar" class="">
-
-            <nav class="menu" id="menu">
-                <ul class="barra">
-                    <a href="index.html">Inicio</a>
-                    <li><a href="Personajes.html">Personajes</a>
-                        <ul class="barra-vertical">
-                            <li><a href="Personajes.html#Dipper">Dipper</a> </li>
-                            <li><a href="Personajes.html#Mabel">Mabel</a> </li>
-                            <li><a href="Personajes.html#Stan">Tío Stan</a> </li>
-                            <li><a href="Personajes.html#Soos">Soos</a> </li>
-                            <li><a href="Personajes.html#Wendy">Wendy</a> </li>
-                        </ul>
-                    </li>
-                    <li><a href="Episodios.html">Episodios</a>
-                        <ul class="barra-vertical">
-                            <li><a href="Episodios.html#primera-temporada">Primera Temporada</a> </li>
-                            <li><a href="Episodios.html#segunda-temporada">Segunda Temporada</a> </li>
-                        </ul>
-                    </li>
-                    <li><a href="Creacion.html">Creacion</a>
-                        <ul class="barra-vertical">
-                            <li><a href="Creacion.html#creador">Creador</a> </li>
-                            <li><a href="Creacion.html#producion">Producción</a> </li>
-                            <li><a href="Creacion.html#directores">Directores</a> </li>
-                        </ul>
-                    </li>
-                    <li><a href="Merchandising.html">Merchandising</a>
-                        <ul class="barra-vertical">
-                            <li><a href="Merchandising.html#libros">Libros</a> </li>
-                            <li><a href="Merchandising.html#juguetes">Juguetes</a> </li>
-                            <li><a href="Merchandising.html#videojuegos">Videojuegos</a> </li>
-                            <li><a href="Merchandising.html#ropa">Ropa</a></li>
-                        </ul>
-                    </li>
-                    <a href="teorias.html">Teorías</a>
-                    <a href="galeria.html">Galeria</a>
-                </ul>
-            </nav>
+            <ul class="barra">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Personajes.html">Personajes</a>
+                    <ul class="barra-vertical">
+                        <li><a href="Personajes.html#Dipper">Dipper</a></li>
+                        <li><a href="Personajes.html#Mabel">Mabel</a></li>
+                        <li><a href="Personajes.html#Stan">Tío Stan</a></li>
+                        <li><a href="Personajes.html#Soos">Soos</a></li>
+                        <li><a href="Personajes.html#Wendy">Wendy</a></li>
+                    </ul>
+                </li>
+                <li><a href="Episodios.html">Episodios</a>
+                    <ul class="barra-vertical">
+                        <li><a href="Episodios.html#primera-temporada">Primera Temporada</a></li>
+                        <li><a href="Episodios.html#segunda-temporada">Segunda Temporada</a></li>
+                    </ul>
+                </li>
+                <li><a href="Creacion.html">Creación</a>
+                    <ul class="barra-vertical">
+                        <li><a href="Creacion.html#creador">Creador</a></li>
+                        <li><a href="Creacion.html#produccion">Producción</a></li>
+                        <li><a href="Creacion.html#directores">Directores</a></li>
+                    </ul>
+                </li>
+                <li><a href="Merchandising.html">Merchandising</a>
+                    <ul class="barra-vertical">
+                        <li><a href="Merchandising.html#libros">Libros</a></li>
+                        <li><a href="Merchandising.html#juguetes">Juguetes</a></li>
+                        <li><a href="Merchandising.html#videojuegos">Videojuegos</a></li>
+                        <li><a href="Merchandising.html#ropa">Ropa</a></li>
+                    </ul>
+                </li>
+                <li><a href="teorias.html">Teorías</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+            </ul>
         </nav>
     </header>
 
-    <div class="libros">
+    <div class="libros" id="libros">
 
         <h2>Libros</h2>
 
         <p>Los libros de Gravity Falls incluyen varias publicaciones que expanden la historia de la serie,
             revelan
             secretos y profundizan en los personajes. Algunos de los libros más populares son:</p>
-        <img src="juguetes/diario3.webp">
+        <img src="juguetes/diario3.webp" alt="Libro Gravity Falls: Diario 3" loading="lazy">
         <p><strong>Gravity Falls: Diario 3 </strong>es uno de los libros más populares y es una réplica del
             diario de Dipper en
             la serie, que
@@ -76,15 +72,15 @@
             también
             tiene detalles adicionales y escritura invisible que se puede ver con una luz negra.</p>
 
-        <img src="juguetes/gfleyendas.png">
+        <img src="juguetes/gfleyendas.png" alt="Libro Gravity Falls: Leyendas Perdidas" loading="lazy">
         <p><strong>Gravity Falls: Leyendas Perdidas</strong> es una colección de historietas con cuatro
             historias
             ineditas que complementan la historia, siguiendo el
             estilo humorístico y misterioso de la serie.</p>
 
-        <img src="juguetes/gfpiratas.webp">
+        <img src="juguetes/gfpiratas.webp" alt="Libro Dipper y Mabel y la maldición de los piratas" loading="lazy">
 
-        <p><strong>Gravity Falls: Dipper & Mabel y la maldicion de los piratas </strong>es un libro
+        <p><strong>Gravity Falls: Dipper &amp; Mabel y la maldicion de los piratas </strong>es un libro
             interactivo
             al estilo de
             "elige tu propia aventura", en el que los lectores pueden tomar decisiones que afectarán el
@@ -95,7 +91,7 @@
             publicada en
             2016.</p>
 
-        <img src="juguetes/gflibrodebill.webp">
+        <img src="juguetes/gflibrodebill.webp" alt="El libro de Bill" loading="lazy">
 
         <p><strong>El libro de Bill </strong>fue publicado en julio de 2024 y es la más reciente
             adición al
@@ -118,19 +114,19 @@
         <div class="juguetes">
             <h2>Juguetes</h2>
             <h3>Figuras de accion</h3>
-            <img src="juguetes/gravityfallsprostotoys.webp">
-            <img src="juguetes/GFFunkoPops1.jpg">
-            <img src="juguetes/GFFunkoPops2.jpg">
-            <img src="juguetes/gffigurasdeaccion.jpg">
-            <img src="juguetes/GFStudio_Bad_Egg1.jpg">
+            <img src="juguetes/gravityfallsprostotoys.webp" alt="Figuras de acción de Gravity Falls" loading="lazy">
+            <img src="juguetes/GFFunkoPops1.jpg" alt="Funko Pop de Gravity Falls" loading="lazy">
+            <img src="juguetes/GFFunkoPops2.jpg" alt="Funko Pop de Gravity Falls" loading="lazy">
+            <img src="juguetes/gffigurasdeaccion.jpg" alt="Figuras de acción de Gravity Falls" loading="lazy">
+            <img src="juguetes/GFStudio_Bad_Egg1.jpg" alt="Figura de Studio Bad Egg de Gravity Falls" loading="lazy">
             <h3>Disfraces</h3>
-            <img src="juguetes/GFDiguise_Gnome.webp">
-            <img src="juguetes/GFDiguise_Dipper.webp">
-            <img src="juguetes/GFDiguise_Mabel.webp">
+            <img src="juguetes/GFDiguise_Gnome.webp" alt="Disfraz de gnomo" loading="lazy">
+            <img src="juguetes/GFDiguise_Dipper.webp" alt="Disfraz de Dipper" loading="lazy">
+            <img src="juguetes/GFDiguise_Mabel.webp" alt="Disfraz de Mabel" loading="lazy">
             <h3>Album de figuritas</h3>
-            <img src="juguetes/GFalbumdefigus1.webp">
-            <img src="juguetes/GFalbumdefigus2.webp">
-            <img src="juguetes/GFalbumdefigus3.webp">
+            <img src="juguetes/GFalbumdefigus1.webp" alt="Álbum de figuritas de Gravity Falls" loading="lazy">
+            <img src="juguetes/GFalbumdefigus2.webp" alt="Álbum de figuritas de Gravity Falls" loading="lazy">
+            <img src="juguetes/GFalbumdefigus3.webp" alt="Álbum de figuritas de Gravity Falls" loading="lazy">
 
         </div>
     </section>
@@ -147,7 +143,7 @@
                 universo
                 de la serie. Los mas conocidos son:</p>
             <ul>
-                <img src="juguetes/GF_3Ds.jpg">
+                <img src="juguetes/GF_3Ds.jpg" alt="Gravity Falls: Legend of the Gnome Gemulets" loading="lazy">
                 <p><strong>Gravity Falls: Legend of the Gnome Gemulets</strong> es un juego de
                     plataformas y
                     aventuras
@@ -164,7 +160,7 @@
                     a los gnomos del bosque. El juego posee una historia original que hace referencias a
                     algunos
                     eventos de la serie, por lo que forma parte de la continuidad.</p>
-                <img src="juguetes/GFRumble_Revenge_Start_Screen.PNG">
+                <img src="juguetes/GFRumble_Revenge_Start_Screen.PNG" alt="Pantalla de inicio de Gravity Falls: Rumble's Revenge" loading="lazy">
                 <p><strong>Gravity Falls: Rumble’s Revenge</strong> es un juego en línea en el que
                     Rumble
                     McSkirmish(del episodio "Fight
@@ -178,7 +174,7 @@
                     a
                     Rumble
                     McSkirmish</p>
-                <img src="juguetes/GFPinesQuest.webp">
+                <img src="juguetes/GFPinesQuest.webp" alt="Gravity Falls: PinesQuest" loading="lazy">
                 <p><strong>Gravity Falls: PinesQuest</strong> es un juego de aventuras en línea lanzado
                     por
                     Disney.
@@ -188,20 +184,20 @@
                     una
                     historia
                     original. Toma lugar despues de los eventos de Rumble’s Revenge</p>
-                <img src="juguetes/GFMystery_Shack_Attack_1.webp">
+                <img src="juguetes/GFMystery_Shack_Attack_1.webp" alt="Gravity Falls Mystery Shack Attack" loading="lazy">
                 <p><strong>Gravity Falls Mystery Shack Attack</strong> es un juego para celulares,
                     basado en
                     defender
                     la
                     Cabaña del Misterio de
                     diversas criaturas y amenazas.</p>
-                <img src="juguetes/GFMystery_Shack_Mystery_dino.webp">
+                <img src="juguetes/GFMystery_Shack_Mystery_dino.webp" alt="Gravity Falls: Mystery Shack Mystery" loading="lazy">
                 <p><strong>Gravity Falls: Mystery Shack Mystery</strong> es un juego disponible en la
                     pagina
                     web
                     de
                     Disney Channel,
-                    estilo click & point. Los jugadores deben ayudar a Dipper y Mabel a resolver
+                    estilo click &amp; point. Los jugadores deben ayudar a Dipper y Mabel a resolver
                     rompecabezas y
                     escapar de la Cabaña del Misterio. </p>
             </ul>
@@ -211,21 +207,19 @@
     <section id="ropa">
         <div class="ropa">
             <h2>Ropa</h2>
-            <img src="juguetes/gfropa12.jpg">
-            <img src="juguetes/gfropa9.jpg">
-            <img src="juguetes/gfropa11.jpg">
-            <img src="juguetes/gfropa13.avif">
-            <img src="juguetes/gfropa2.png">
-            <img src="juguetes/gfropa3.png">
-            <img src="juguetes/gfropa4.png">
-            <img src="juguetes/gfropa5.jpg">
-            <img src="juguetes/gfropa8.jpg">
-            <img src="juguetes/gfropa10.jpg">
+            <img src="juguetes/gfropa12.jpg" alt="Ropa de Gravity Falls" loading="lazy">
+            <img src="juguetes/gfropa9.jpg" alt="Ropa de Gravity Falls" loading="lazy">
+            <img src="juguetes/gfropa11.jpg" alt="Ropa de Gravity Falls" loading="lazy">
+            <img src="juguetes/gfropa13.avif" alt="Ropa de Gravity Falls" loading="lazy">
+            <img src="juguetes/gfropa2.png" alt="Ropa de Gravity Falls" loading="lazy">
+            <img src="juguetes/gfropa3.png" alt="Ropa de Gravity Falls" loading="lazy">
+            <img src="juguetes/gfropa4.png" alt="Ropa de Gravity Falls" loading="lazy">
+            <img src="juguetes/gfropa5.jpg" alt="Ropa de Gravity Falls" loading="lazy">
+            <img src="juguetes/gfropa8.jpg" alt="Ropa de Gravity Falls" loading="lazy">
+            <img src="juguetes/gfropa10.jpg" alt="Ropa de Gravity Falls" loading="lazy">
         </div>
     </section>
 
-    <script src="juguetes/lightbox-plus-jquery.min.js"></script>
-    <script src="juguetes/lightbox.min.js"></script>
     <script src="juguetes/js.js"></script>
 
     <footer>
@@ -245,3 +239,5 @@
     </script>
 
 </body>
+
+</html>

@@ -1,106 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
-<link rel="stylesheet" href="lighbox.css">
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fontawesome.com/icons/circle-up?f=classic&s=solid">
     <link href="css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/css.css">
 
-    <meta name="Galeria" content="Seccion con imagenes y fanarts de gravity falls.">
-    <title>Gravity Falls</title>
+    <meta name="description" content="Sección con imágenes y fanarts de Gravity Falls.">
+    <title>Galería de imágenes de Gravity Falls</title>
 </head>
 
 <body>
 
     <header>
-        <h1>Galeria de imagenes</h1>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <h1>Galería de imágenes</h1>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="Abrir menú"><i class="fa fa-bars"></i></a>
         <nav id="menu_bar" class="">
-
-            <nav class="menu" id="menu">
-                <ul class="barra">
-                    <a href="index.html">Inicio</a>
-                    <li><a href="Personajes.html">Personajes</a>
-                        <ul class="barra-vertical">
-                            <li><a href="Personajes.html#Dipper">Dipper</a> </li>
-                            <li><a href="Personajes.html#Mabel">Mabel</a> </li>
-                            <li><a href="Personajes.html#Stan">Tío Stan</a> </li>
-                            <li><a href="Personajes.html#Soos">Soos</a> </li>
-                            <li><a href="Personajes.html#Wendy">Wendy</a> </li>
-                        </ul>
-                    </li>
-                    <li><a href="Episodios.html">Episodios</a>
-                        <ul class="barra-vertical">
-                            <li><a href="Episodios.html#primera-temporada">Primera Temporada</a> </li>
-                            <li><a href="Episodios.html#segunda-temporada">Segunda Temporada</a> </li>
-                        </ul>
-                    </li>
-                    <li><a href="Creacion.html">Creacion</a>
-                        <ul class="barra-vertical">
-                            <li><a href="Creacion.html#creador">Creador</a> </li>
-                            <li><a href="Creacion.html#producion">Producción</a> </li>
-                            <li><a href="Creacion.html#directores">Directores</a> </li>
-                        </ul>
-                    </li>
-                    <li><a href="Merchandising.html">Merchandising</a>
-                        <ul class="barra-vertical">
-                            <li><a href="Merchandising.html#libros">Libros</a> </li>
-                            <li><a href="Merchandising.html#juguetes">Juguetes</a> </li>
-                            <li><a href="Merchandising.html#videojuegos">Videojuegos</a> </li>
-                            <li><a href="Merchandising.html#ropa">Ropa</a></li>
-                        </ul>
-                    </li>
-                    <a href="teorias.html">Teorías</a>
-                    <a href="galeria.html">Galeria</a>
-                </ul>
-            </nav>
+            <ul class="barra">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Personajes.html">Personajes</a>
+                    <ul class="barra-vertical">
+                        <li><a href="Personajes.html#Dipper">Dipper</a></li>
+                        <li><a href="Personajes.html#Mabel">Mabel</a></li>
+                        <li><a href="Personajes.html#Stan">Tío Stan</a></li>
+                        <li><a href="Personajes.html#Soos">Soos</a></li>
+                        <li><a href="Personajes.html#Wendy">Wendy</a></li>
+                    </ul>
+                </li>
+                <li><a href="Episodios.html">Episodios</a>
+                    <ul class="barra-vertical">
+                        <li><a href="Episodios.html#primera-temporada">Primera Temporada</a></li>
+                        <li><a href="Episodios.html#segunda-temporada">Segunda Temporada</a></li>
+                    </ul>
+                </li>
+                <li><a href="Creacion.html">Creación</a>
+                    <ul class="barra-vertical">
+                        <li><a href="Creacion.html#creador">Creador</a></li>
+                        <li><a href="Creacion.html#produccion">Producción</a></li>
+                        <li><a href="Creacion.html#directores">Directores</a></li>
+                    </ul>
+                </li>
+                <li><a href="Merchandising.html">Merchandising</a>
+                    <ul class="barra-vertical">
+                        <li><a href="Merchandising.html#libros">Libros</a></li>
+                        <li><a href="Merchandising.html#juguetes">Juguetes</a></li>
+                        <li><a href="Merchandising.html#videojuegos">Videojuegos</a></li>
+                        <li><a href="Merchandising.html#ropa">Ropa</a></li>
+                    </ul>
+                </li>
+                <li><a href="teorias.html">Teorías</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+            </ul>
+        </nav>
     </header>
 
-
-
     <div class="container">
-        <div class="gallery"><a href="galeria/gravity falls 15.gif" data-lightbox="fanarts" data-title="caption1">
-                <img src="galeria/gravity falls 15.gif"></a></div>
+        <div class="gallery"><a href="galeria/gravity falls 15.gif" data-lightbox="fanarts" data-title="Fanart de Gravity Falls">
+                <img src="galeria/gravity falls 15.gif" alt="Fanart de Gravity Falls (1)" loading="lazy"></a></div>
 
-        <div class="gallery"><a href="galeria/gravity falls 17.jpg" data-lightbox="fanarts" data-title="caption2">
-                <img src="galeria/gravity falls 17.jpg"></a></div>
+        <div class="gallery"><a href="galeria/gravity falls 17.jpg" data-lightbox="fanarts" data-title="Fanart de Gravity Falls">
+                <img src="galeria/gravity falls 17.jpg" alt="Fanart de Gravity Falls (2)" loading="lazy"></a></div>
 
-        <div class="gallery"><a href="galeria/gravity falls 18.jpg" data-lightbox="fanarts" data-title="caption3">
-                <img src="galeria/gravity falls 18.jpg"></a></div>
+        <div class="gallery"><a href="galeria/gravity falls 18.jpg" data-lightbox="fanarts" data-title="Fanart de Gravity Falls">
+                <img src="galeria/gravity falls 18.jpg" alt="Fanart de Gravity Falls (3)" loading="lazy"></a></div>
 
-        <div class="gallery"><a href="galeria/gravity falls 21.jpg" data-lightbox="fanarts" data-title="caption4">
-                <img src="galeria/gravity falls 21.jpg"></a></div>
+        <div class="gallery"><a href="galeria/gravity falls 21.jpg" data-lightbox="fanarts" data-title="Fanart de Gravity Falls">
+                <img src="galeria/gravity falls 21.jpg" alt="Fanart de Gravity Falls (4)" loading="lazy"></a></div>
 
-        <div class="gallery"><a href="galeria/gravity falls 22.jpg" data-lightbox="fanarts" data-title="caption5">
-                <img src="galeria/gravity falls 22.jpg"></a></div>
+        <div class="gallery"><a href="galeria/gravity falls 22.jpg" data-lightbox="fanarts" data-title="Fanart de Gravity Falls">
+                <img src="galeria/gravity falls 22.jpg" alt="Fanart de Gravity Falls (5)" loading="lazy"></a></div>
 
-        <div class="gallery"><a href="galeria/gravity falls 23.jpg" data-lightbox="fanarts" data-title="caption6">
-                <img src="galeria/gravity falls 23.jpg"></a></div>
+        <div class="gallery"><a href="galeria/gravity falls 23.jpg" data-lightbox="fanarts" data-title="Fanart de Gravity Falls">
+                <img src="galeria/gravity falls 23.jpg" alt="Fanart de Gravity Falls (6)" loading="lazy"></a></div>
 
-        <div class="gallery"><a href="galeria/gravity falls 24.jpg" data-lightbox="fanarts" data-title="caption7">
-                <img src="galeria/gravity falls 24.jpg"></a></div>
+        <div class="gallery"><a href="galeria/gravity falls 24.jpg" data-lightbox="fanarts" data-title="Fanart de Gravity Falls">
+                <img src="galeria/gravity falls 24.jpg" alt="Fanart de Gravity Falls (7)" loading="lazy"></a></div>
 
-        <div class="gallery"><a href="galeria/gravity falls 25.jpg" data-lightbox="fanarts" data-title="caption8">
-                <img src="galeria/gravity falls 25.jpg"></a></div>
+        <div class="gallery"><a href="galeria/gravity falls 25.jpg" data-lightbox="fanarts" data-title="Fanart de Gravity Falls">
+                <img src="galeria/gravity falls 25.jpg" alt="Fanart de Gravity Falls (8)" loading="lazy"></a></div>
 
-        <div class="gallery"><a href="galeria/gravity falls 26.jpg" data-lightbox="fanarts" data-title="caption9">
-                <img src="galeria/gravity falls 26.jpg"></a></div>
+        <div class="gallery"><a href="galeria/gravity falls 26.jpg" data-lightbox="fanarts" data-title="Fanart de Gravity Falls">
+                <img src="galeria/gravity falls 26.jpg" alt="Fanart de Gravity Falls (9)" loading="lazy"></a></div>
 
-        <div class="gallery"><a href="galeria/gravity falls 29.jpg" data-lightbox="fanarts" data-title="caption10">
-                <img src="galeria/gravity falls 29.jpg"></a></div>
+        <div class="gallery"><a href="galeria/gravity falls 29.jpg" data-lightbox="fanarts" data-title="Fanart de Gravity Falls">
+                <img src="galeria/gravity falls 29.jpg" alt="Fanart de Gravity Falls (10)" loading="lazy"></a></div>
 
-        <div class="gallery"><a href="galeria/gravity falls 49.jpg" data-lightbox="fanarts" data-title="caption11">
-                <img src="galeria/gravity falls 49.jpg"></a></div>
+        <div class="gallery"><a href="galeria/gravity falls 49.jpg" data-lightbox="fanarts" data-title="Fanart de Gravity Falls">
+                <img src="galeria/gravity falls 49.jpg" alt="Fanart de Gravity Falls (11)" loading="lazy"></a></div>
 
-        <div class="gallery"><a href="galeria/gravity falls 50.jpg" data-lightbox="fanarts" data-title="caption12">
-                <img src="galeria/gravity falls 50.jpg"></a></div>
+        <div class="gallery"><a href="galeria/gravity falls 50.jpg" data-lightbox="fanarts" data-title="Fanart de Gravity Falls">
+                <img src="galeria/gravity falls 50.jpg" alt="Fanart de Gravity Falls (12)" loading="lazy"></a></div>
 
     </div>
 
@@ -108,7 +100,6 @@
         <p>© Gravity Falls Fanpage | Política de Privacidad | Sitio propiedad de Angelica Violi | Todos los derechos
             reservados | 2024</p>
     </footer>
-
 
     <script type="text/javascript">
         function myFunction() {
