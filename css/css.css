@@ -698,9 +698,9 @@ nav ul {
    PORTADA + NAVEGACIÓN · Archivo de misterios
    ========================================================= */
 :root {
-    --gf-ink: #21172f;
-    --gf-forest: #352443;
-    --gf-forest-deep: #191020;
+    --gf-ink: #17101f;
+    --gf-forest: #3b294b;
+    --gf-forest-deep: #21172f;
     --gf-paper: #ede4d0;
     --gf-paper-light: #f6f0e5;
     --gf-gold: #d8bd70;
@@ -728,7 +728,7 @@ body {
     align-items: center;
     gap: 24px;
     padding: 18px clamp(20px, 5vw, 72px) 0;
-    background: linear-gradient(120deg, #21172f, #352443);
+    background: linear-gradient(120deg, #21172f, #3b294b);
     border-bottom: 3px solid var(--gf-gold);
     box-shadow: 0 10px 28px rgba(0,0,0,.22);
     border-radius: 0;
@@ -806,7 +806,7 @@ body {
 .main-nav .barra > li > a:focus-visible,
 .main-nav .barra > li > a[aria-current="page"] {
     color: #fff6d8;
-    background: rgba(0,0,0,.18);
+    background: rgba(23,16,31,.34);
     border-bottom-color: var(--gf-gold);
     outline-offset: -3px;
 }
@@ -855,7 +855,7 @@ main { width: 100%; }
     padding: clamp(48px, 8vw, 108px) clamp(22px, 6vw, 86px);
     background:
         radial-gradient(circle at 15% 25%, rgba(216,189,112,.07), transparent 30%),
-        linear-gradient(135deg, #21172f, #30203d 65%, #21172f);
+        linear-gradient(135deg, #21172f 0%, #30203d 52%, #24182f 100%);
 }
 .home-hero .hero-copy { min-width: 0; }
 .home-hero .eyebrow { margin-bottom: 18px; }
@@ -952,15 +952,15 @@ main { width: 100%; }
     align-items: flex-start;
     padding: 23px;
     color: var(--gf-ink);
-    background: rgba(255,252,240,.72);
+    background: #f4ecd9;
     border: 1px solid rgba(53,36,67,.25);
-    border-top: 4px solid #654779;
+    border-top: 4px solid #4c355e;
     text-decoration: none;
     transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
 }
 .file-card:hover, .file-card:focus-visible {
     transform: translateY(-4px);
-    background: #fff9e8;
+    background: #fff8e9;
     box-shadow: 0 12px 28px rgba(33,23,47,.12);
 }
 .file-number {
@@ -975,13 +975,13 @@ main { width: 100%; }
     font-size: 1.45rem;
     font-weight: 700;
 }
-.file-description { max-width: 32ch; color: #51465b; font-size: .88rem; }
+.file-description { max-width: 32ch; color: #463b50; font-size: .88rem; }
 .file-arrow { margin-top: auto; padding-top: 15px; color: #9e4938; font-size: 1.3rem; }
 .site-footer {
     margin: 0;
     padding: 24px 20px;
     color: #c9d1c3;
-    background: #17101f;
+    background: #120d18;
     text-align: center;
     border-top: 1px solid rgba(216,189,112,.3);
 }
@@ -1012,7 +1012,7 @@ main { width: 100%; }
         padding: 0 0 5px 13px;
         border: 0;
         box-shadow: none;
-        background: rgba(0,0,0,.18);
+        background: rgba(23,16,31,.34);
     }
     .main-nav .barra-vertical a { padding: 7px 12px; white-space: normal; }
     .home-hero { gap: 30px; padding-top: 56px; padding-bottom: 56px; }
