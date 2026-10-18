@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Conocé a Dipper, Mabel y los habitantes más importantes de Gravity Falls.">
+    <meta name="theme-color" content="#21172f">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/css.css">
-
-    <meta name="description" content="Sección que presenta a los personajes principales de la serie Gravity Falls.">
-    <title>Personajes de Gravity Falls</title>
+    <title>Personajes | Gravity Falls</title>
 </head>
-
 <body>
-    <!-- Encabezado de la página -->
-    <header>
-        <h1>Personajes de Gravity Falls</h1>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="Abrir menú"><i class="fa fa-bars"></i></a>
-        <nav id="menu_bar" class="">
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Gravity Falls, volver al inicio">
+            <img src="imagenes/Logo_de_Gravity_Falls.png" alt="Gravity Falls">
+        </a>
+        <div class="header-heading">
+            <p class="header-kicker">Archivo de misterios · Oregon</p>
+            <h1>Expediente de personajes</h1>
+        </div>
+        <button class="menu-toggle" type="button" aria-controls="menu_bar" aria-expanded="false" aria-label="Abrir menú">
+            <span aria-hidden="true">&#9776;</span>
+        </button>
+        <nav id="menu_bar" class="main-nav" aria-label="Navegación principal">
             <ul class="barra">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="Personajes.html">Personajes</a>
+                <li><a href="Personajes.html" aria-current="page">Personajes</a>
                     <ul class="barra-vertical">
-                        <li><a href="Personajes.html#Dipper">Dipper</a></li>
-                        <li><a href="Personajes.html#Mabel">Mabel</a></li>
-                        <li><a href="Personajes.html#Stan">Tío Stan</a></li>
-                        <li><a href="Personajes.html#Soos">Soos</a></li>
-                        <li><a href="Personajes.html#Wendy">Wendy</a></li>
+                        <li><a href="#Dipper">Dipper</a></li>
+                        <li><a href="#Mabel">Mabel</a></li>
+                        <li><a href="#Stan">Tío Stan</a></li>
+                        <li><a href="#Soos">Soos</a></li>
+                        <li><a href="#Wendy">Wendy</a></li>
                     </ul>
                 </li>
                 <li><a href="Episodios.html">Episodios</a>
                     <ul class="barra-vertical">
-                        <li><a href="Episodios.html#primera-temporada">Primera Temporada</a></li>
-                        <li><a href="Episodios.html#segunda-temporada">Segunda Temporada</a></li>
+                        <li><a href="Episodios.html#primera-temporada">Primera temporada</a></li>
+                        <li><a href="Episodios.html#segunda-temporada">Segunda temporada</a></li>
                     </ul>
                 </li>
                 <li><a href="Creacion.html">Creación</a>
@@ -58,100 +61,141 @@
         </nav>
     </header>
 
-    <!-- Sección de personajes -->
-    <section id="personajes">
-        <article class="personajes" id="Dipper">
-            <img src="imagenes/dipper.jpg" alt="Dipper Pines" loading="lazy">
-            <div class="texto">
-                <h3>Dipper</h3>
-                <p>Nombre real: Mason Pines</p>
-                <p>Edad: 12 años</p>
-                <p>Nacimiento: 31 de agosto de 1999</p>
-                <p>Un chico con un gran intelecto y una interminable curiosidad. Antisocial, algo torpe, pero de buen
-                    corazón, encuentra un diario en sus vacaciones de verano en Gravity Falls y
-                    decide
-                    resolver los misterios que envuelven al pueblo.</p>
+    <main class="characters-main">
+        <section class="characters-intro" aria-labelledby="characters-title">
+            <p class="eyebrow">Expediente 002 · Habitantes bajo observación</p>
+            <h2 id="characters-title">Nadie es quien parece.</h2>
+            <p>En Gravity Falls, hasta la persona más común puede guardar un secreto. Conocé a quienes acompañan a los mellizos Pines en sus investigaciones, aventuras y problemas inexplicables.</p>
+            <a class="characters-jump" href="#archivo-personajes">Explorar los expedientes <span aria-hidden="true">↓</span></a>
+            <p class="characters-stamp"><span aria-hidden="true">✦</span> 05 fichas registradas · Clasificación: confidencial</p>
+        </section>
+
+        <section class="characters-archive" id="archivo-personajes" aria-labelledby="archive-title">
+            <div class="characters-heading">
+                <p class="eyebrow">Archivo de campo</p>
+                <h2 id="archive-title">Personas de interés</h2>
+                <p>Seleccioná una ficha para consultar el perfil de cada personaje.</p>
             </div>
-        </article>
 
-        <article class="personajes" id="Mabel">
-            <img src="imagenes/mabel.jpg" alt="Mabel Pines" loading="lazy">
-            <div class="texto">
-                <h3>Mabel</h3>
-                <p>Nombre real: Mabel Pines</p>
-                <p>Edad: 12 años</p>
-                <p>Nacimiento: 31 de agosto de 1999</p>
-                <p>Hermana melliza de Dipper. Una niña alegre y colorida. Aunque puede llegar a ser muy
-                    impulsiva a
-                    veces, es bastante creativa y aventurera. Quiere ayudar a su hermano a resolver los
-                    misterios
-                    del pueblo de Gravity Falls, además de encontrar a su “amor de verano”.</p>
+            <div class="characters-grid">
+                <article class="character-file" id="Dipper">
+                    <div class="character-file-image">
+                        <img src="imagenes/dipper.jpg" alt="Dipper Pines" loading="lazy">
+                        <span class="file-tag">Exp. 01</span>
+                    </div>
+                    <div class="character-file-copy">
+                        <p class="character-role">Investigador · Mellizo Pines</p>
+                        <h3>Dipper Pines</h3>
+                        <dl class="character-facts">
+                            <div><dt>Nombre real</dt><dd>Mason Pines</dd></div>
+                            <div><dt>Edad</dt><dd>12 años</dd></div>
+                            <div><dt>Nacimiento</dt><dd>31 de agosto</dd></div>
+                        </dl>
+                        <p>Curioso, inteligente y persistente. Cuando encuentra un diario misterioso, se propone descubrir qué se esconde detrás de los fenómenos extraños del pueblo.</p>
+                    </div>
+                </article>
+
+                <article class="character-file" id="Mabel">
+                    <div class="character-file-image">
+                        <img src="imagenes/mabel.jpg" alt="Mabel Pines" loading="lazy">
+                        <span class="file-tag">Exp. 02</span>
+                    </div>
+                    <div class="character-file-copy">
+                        <p class="character-role">Aventurera · Melliza Pines</p>
+                        <h3>Mabel Pines</h3>
+                        <dl class="character-facts">
+                            <div><dt>Nombre</dt><dd>Mabel Pines</dd></div>
+                            <div><dt>Edad</dt><dd>12 años</dd></div>
+                            <div><dt>Nacimiento</dt><dd>31 de agosto</dd></div>
+                        </dl>
+                        <p>Creativa, entusiasta y espontánea. Su optimismo y su imaginación la llevan a meterse en situaciones inesperadas, pero nunca abandona a su hermano.</p>
+                    </div>
+                </article>
+
+                <article class="character-file" id="Stan">
+                    <div class="character-file-image">
+                        <img src="imagenes/tio%20stan.jpg" alt="Tío abuelo Stan Pines" loading="lazy">
+                        <span class="file-tag">Exp. 03</span>
+                    </div>
+                    <div class="character-file-copy">
+                        <p class="character-role">Propietario · Cabaña del Misterio</p>
+                        <h3>Tío Stan</h3>
+                        <dl class="character-facts">
+                            <div><dt>Nombre real</dt><dd>Stanley Pines</dd></div>
+                            <div><dt>Edad</dt><dd>60 años</dd></div>
+                            <div><dt>Nacimiento</dt><dd>15 de junio</dd></div>
+                        </dl>
+                        <p>Gruñón, astuto y obsesionado con los negocios. Detrás de la fachada de su trampa para turistas, Stan guarda más secretos de los que deja ver.</p>
+                    </div>
+                </article>
+
+                <article class="character-file" id="Soos">
+                    <div class="character-file-image">
+                        <img src="imagenes/Soos.jpg" alt="Soos Ramírez" loading="lazy">
+                        <span class="file-tag">Exp. 04</span>
+                    </div>
+                    <div class="character-file-copy">
+                        <p class="character-role">Encargado · Cabaña del Misterio</p>
+                        <h3>Soos Ramírez</h3>
+                        <dl class="character-facts">
+                            <div><dt>Nombre</dt><dd>Jesús Alzamirano Ramírez</dd></div>
+                            <div><dt>Edad</dt><dd>21 años</dd></div>
+                            <div><dt>Nacimiento</dt><dd>13 de julio</dd></div>
+                        </dl>
+                        <p>Amable, leal y siempre dispuesto a ayudar. Es el encargado de mantenimiento de la Cabaña del Misterio y suele aportar soluciones inesperadas.</p>
+                    </div>
+                </article>
+
+                <article class="character-file" id="Wendy">
+                    <div class="character-file-image">
+                        <img src="imagenes/Wendy.jpg" alt="Wendy Corduroy" loading="lazy">
+                        <span class="file-tag">Exp. 05</span>
+                    </div>
+                    <div class="character-file-copy">
+                        <p class="character-role">Empleada · Espíritu libre</p>
+                        <h3>Wendy Corduroy</h3>
+                        <dl class="character-facts">
+                            <div><dt>Nombre</dt><dd>Wendy B. Corduroy</dd></div>
+                            <div><dt>Edad</dt><dd>16 años</dd></div>
+                            <div><dt>Nacimiento</dt><dd>4 de septiembre</dd></div>
+                        </dl>
+                        <p>Relajada, independiente y aventurera. Trabaja en la Cabaña del Misterio y se suma a las misiones de los mellizos cuando la situación lo requiere.</p>
+                    </div>
+                </article>
             </div>
-        </article>
+            <p class="archive-note"><span aria-hidden="true">⚠</span> Archivo incompleto: en este pueblo, la información nunca cuenta toda la historia.</p>
+        </section>
+    </main>
 
-        <article class="personajes" id="Stan">
-            <img src="imagenes/tio stan.jpg" alt="Grunkle Stan" loading="lazy">
-            <h3>Tío Stan</h3>
-            <div class="texto">
-                <p>Nombre real: Stanley Pines</p>
-                <p>Edad: 60 años</p>
-                <p>Nacimiento: 15 de junio de 1952</p>
-                <p>Tío-abuelo de los mellizos Pines. Un hombre anciano sin escrúpulos a la hora de hacer
-                    negocios
-                    pero que tiene sus límites morales, sobre todo en lo que respecta a su familia. Gruñón,
-                    descarado y ambicioso, es dueño de la Cabaña del Misterio, una trampa para turistas donde
-                    muestra monstruos falsos. Stan parece desconocer las rarezas del pueblo, pero en realidad
-                    esconde muchos secretos...</p>
-            </div>
-        </article>
-
-        <article class="personajes" id="Soos">
-            <img src="imagenes/Soos.jpg" alt="Soos" loading="lazy">
-            <h3>Soos</h3>
-            <div class="texto">
-                <p>Nombre real: Jesús Alzamirano Ramírez</p>
-                <p>Edad: 21 años</p>
-                <p>Nacimiento: 13 de julio de 1989</p>
-                <p>Es el empleado de Stan en la
-                    Cabaña del Misterio. Un hombre veinteañero, bonachón, ingenuo, pero siempre
-                    dispuesto a dar una mano. Ve a Stan como una figura paterna, aunque este solo lo
-                    ve como un asistente más.</p>
-            </div>
-        </article>
-
-        <article class="personajes" id="Wendy">
-            <img src="imagenes/Wendy.jpg" alt="Wendy" loading="lazy">
-            <h3>Wendy</h3>
-            <div class="texto">
-
-                <p>Nombre real: Wendy Berble Corduroy</p>
-                <p>Edad: 16 años</p>
-                <p>Nacimiento: 4 de septiembre de 1996</p>
-                <p>La segunda empleada del tío Stan. Una chica adolescente que trabaja en la Cabaña del Misterio
-                    como oficio de verano. Rebelde pero
-                    de carácter relajado, acompaña a los gemelos Pines en varias de sus aventuras y
-                    a veces esta acompaña de sus amigos adolescentes.</p>
-            </div>
-        </article>
-    </section>
-
-    <!-- Pie de página -->
-    <footer>
-        <p>© Gravity Falls Fanpage | Política de Privacidad | Sitio propiedad de Angelica Violi | Todos los derechos
-            reservados | 2024</p>
+    <footer class="site-footer">
+        <p>© Gravity Falls Fanpage · Un archivo de misterios creado por una fan, para fans.</p>
     </footer>
 
-    <script type="text/javascript">
-        function myFunction() {
-            var x = document.getElementById("menu_bar");
-            if (x.className === "") {
-                x.className += "responsive";
-            } else {
-                x.className = "";
-            }
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const menu = document.getElementById("menu_bar");
+
+        if (menuToggle && menu) {
+            menuToggle.addEventListener("click", () => {
+                const isOpen = menu.classList.toggle("is-open");
+                menuToggle.setAttribute("aria-expanded", String(isOpen));
+                menuToggle.setAttribute("aria-label", isOpen ? "Cerrar menú" : "Abrir menú");
+                menuToggle.innerHTML = isOpen
+                    ? '<span aria-hidden="true">×</span>'
+                    : '<span aria-hidden="true">&#9776;</span>';
+            });
+
+            menu.querySelectorAll("a").forEach(link => {
+                link.addEventListener("click", () => {
+                    if (window.matchMedia("(max-width: 1100px)").matches) {
+                        menu.classList.remove("is-open");
+                        menuToggle.setAttribute("aria-expanded", "false");
+                        menuToggle.setAttribute("aria-label", "Abrir menú");
+                        menuToggle.innerHTML = '<span aria-hidden="true">&#9776;</span>';
+                    }
+                });
+            });
         }
     </script>
-
 </body>
-
 </html>
