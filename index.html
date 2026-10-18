@@ -132,7 +132,7 @@
 
             menu.querySelectorAll("a").forEach(link => {
                 link.addEventListener("click", () => {
-                    if (window.matchMedia("(max-width: 900px)").matches) {
+                    if (window.matchMedia("(max-width: 1100px)").matches) {
                         menu.classList.remove("is-open");
                         menuToggle.setAttribute("aria-expanded", "false");
                         menuToggle.setAttribute("aria-label", "Abrir menú");
