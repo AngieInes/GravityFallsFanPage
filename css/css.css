@@ -1120,3 +1120,202 @@ main { width: 100%; }
         flex-basis: 100%;
     }
 }
+
+
+/* =========================================================
+   PERSONAJES · Archivo de misterios en violeta y papel
+   ========================================================= */
+.characters-main { color: var(--gf-paper-light); }
+.characters-intro {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: clamp(48px, 7vw, 88px) clamp(22px, 6vw, 86px) 54px;
+    background:
+        radial-gradient(circle at 82% 20%, rgba(216,189,112,.10), transparent 27%),
+        linear-gradient(135deg, #21172f, #342343 62%, #24182f);
+}
+.characters-intro .eyebrow { margin-bottom: 18px; }
+.characters-intro h2 {
+    max-width: 850px;
+    margin: 0 0 22px;
+    color: var(--gf-paper-light);
+    font-size: clamp(2.7rem, 6.5vw, 5.4rem);
+    line-height: 1.03;
+    letter-spacing: -.035em;
+    text-align: left;
+}
+.characters-intro > p:not(.eyebrow):not(.characters-stamp) {
+    max-width: 680px;
+    margin: 0;
+    color: #ded3e7;
+    font-size: clamp(.98rem, 1.5vw, 1.1rem);
+}
+.characters-jump {
+    display: inline-flex;
+    align-items: center;
+    gap: 22px;
+    margin-top: 26px;
+    padding: 12px 17px;
+    color: var(--gf-ink);
+    background: var(--gf-gold);
+    border: 1px solid var(--gf-gold);
+    border-radius: 4px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background .18s ease, transform .18s ease;
+}
+.characters-jump:hover { background: #e8ca78; transform: translateY(-2px); }
+.characters-stamp {
+    margin: 28px 0 0;
+    color: #c8b9d2;
+    font-size: .76rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+.characters-stamp span { color: var(--gf-gold); margin-right: 8px; }
+.characters-archive {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 44px clamp(22px, 6vw, 86px) 76px;
+    color: var(--gf-ink);
+    background: var(--gf-paper);
+}
+.characters-heading { margin-bottom: 28px; }
+.characters-heading .eyebrow { color: #8c4937; }
+.characters-heading h2 {
+    margin: 0 0 9px;
+    color: var(--gf-ink);
+    font-size: clamp(1.8rem, 3.5vw, 2.7rem);
+    line-height: 1.2;
+    text-align: left;
+}
+.characters-heading > p:last-child { margin: 0; color: #554a5d; }
+.characters-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    align-items: stretch;
+}
+.character-file {
+    min-width: 0;
+    overflow: hidden;
+    background: #f8f1e4;
+    border: 1px solid rgba(33,23,47,.2);
+    border-top: 4px solid #4c355e;
+    box-shadow: 0 8px 22px rgba(33,23,47,.08);
+    scroll-margin-top: 24px;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+.character-file:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(33,23,47,.15);
+}
+.character-file-image {
+    position: relative;
+    overflow: hidden;
+    background: #30233b;
+}
+.character-file-image img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 5 / 4;
+    object-fit: cover;
+    object-position: center 24%;
+    filter: saturate(.82) sepia(.08);
+    transition: transform .3s ease;
+}
+.character-file:hover .character-file-image img { transform: scale(1.025); }
+.file-tag {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 7px 11px;
+    color: #21172f;
+    background: var(--gf-gold);
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+.character-file-copy { padding: 20px 20px 22px; }
+.character-role {
+    margin: 0 0 8px;
+    color: #8c4937;
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+.character-file-copy h3 {
+    margin: 0 0 16px;
+    color: #291b37;
+    font-family: Georgia, serif;
+    font-size: clamp(1.25rem, 2vw, 1.65rem);
+    line-height: 1.2;
+}
+.character-facts {
+    display: grid;
+    gap: 7px;
+    margin: 0 0 15px;
+    padding: 13px 0;
+    border-top: 1px solid rgba(33,23,47,.16);
+    border-bottom: 1px solid rgba(33,23,47,.16);
+}
+.character-facts div {
+    display: grid;
+    grid-template-columns: minmax(90px, .8fr) minmax(0, 1.2fr);
+    gap: 10px;
+}
+.character-facts dt {
+    color: #6c6073;
+    font-size: .73rem;
+    font-weight: 700;
+}
+.character-facts dd {
+    margin: 0;
+    color: #30243b;
+    font-size: .78rem;
+    overflow-wrap: anywhere;
+}
+.character-file-copy > p:last-child {
+    margin: 0;
+    color: #4b4054;
+    font-size: .86rem;
+    line-height: 1.75;
+}
+.archive-note {
+    margin: 30px 0 0;
+    padding: 15px 17px;
+    color: #49394f;
+    background: #e4d8bd;
+    border-left: 4px solid var(--gf-rust);
+    font-size: .82rem;
+}
+.archive-note span { margin-right: 8px; color: #8c4937; }
+#Dipper, #Mabel, #Stan, #Soos, #Wendy { scroll-margin-top: 28px; }
+
+@media (max-width: 900px) {
+    .characters-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 650px) {
+    .characters-intro { padding: 42px 20px 40px; }
+    .characters-intro h2 { font-size: clamp(2.45rem, 11vw, 3.5rem); }
+    .characters-archive { padding: 32px 18px 52px; }
+    .characters-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+    .character-file { display: grid; grid-template-columns: minmax(105px, .8fr) minmax(0, 1.2fr); }
+    .character-file-image { min-height: 100%; }
+    .character-file-image img { height: 100%; min-height: 260px; aspect-ratio: auto; }
+    .character-file-copy { padding: 17px 15px; }
+    .character-file-copy h3 { font-size: 1.25rem; }
+    .character-facts div { grid-template-columns: 1fr; gap: 1px; }
+}
+@media (max-width: 420px) {
+    .character-file { display: block; }
+    .character-file-image img { height: auto; min-height: 0; aspect-ratio: 5 / 4; }
+    .character-file-copy { padding: 19px; }
+    .character-facts div { grid-template-columns: minmax(90px, .8fr) minmax(0, 1.2fr); gap: 8px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .character-file, .character-file-image img, .characters-jump { transition: none; }
+}
