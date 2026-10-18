@@ -18,13 +18,20 @@
 
 <body>
 
-    <header>
-        <img src="imagenes/Logo_de_Gravity_Falls.png" alt="Logo de Gravity Falls">
-        <h1>¡Bienvenidos a la fan-page de Gravity Falls!</h1>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="Abrir menú"><i class="fa fa-bars"></i></a>
-        <nav id="menu_bar" class="">
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Gravity Falls, volver al inicio">
+            <img src="imagenes/Logo_de_Gravity_Falls.png" alt="Gravity Falls">
+        </a>
+        <div class="header-heading">
+            <p class="header-kicker">Archivo de misterios · Oregon</p>
+            <h1>Explorá lo inexplicable</h1>
+        </div>
+        <button class="menu-toggle" type="button" aria-controls="menu_bar" aria-expanded="false" aria-label="Abrir menú">
+            <span aria-hidden="true">&#9776;</span>
+        </button>
+        <nav id="menu_bar" class="main-nav" aria-label="Navegación principal">
             <ul class="barra">
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html" aria-current="page">Inicio</a></li>
                 <li><a href="Personajes.html">Personajes</a>
                     <ul class="barra-vertical">
                         <li><a href="Personajes.html#Dipper">Dipper</a></li>
@@ -36,8 +43,8 @@
                 </li>
                 <li><a href="Episodios.html">Episodios</a>
                     <ul class="barra-vertical">
-                        <li><a href="Episodios.html#primera-temporada">Primera Temporada</a></li>
-                        <li><a href="Episodios.html#segunda-temporada">Segunda Temporada</a></li>
+                        <li><a href="Episodios.html#primera-temporada">Primera temporada</a></li>
+                        <li><a href="Episodios.html#segunda-temporada">Segunda temporada</a></li>
                     </ul>
                 </li>
                 <li><a href="Creacion.html">Creación</a>
@@ -61,44 +68,78 @@
         </nav>
     </header>
 
-    <section id="inicio">
-        <div class="content">
-            <h2>¿Qué es Gravity Falls?</h2>
-            <p><strong> Gravity Falls</strong> es un misterioso pueblo donde los gemelos <strong> Dipper y
-                    Mabel</strong> que viajan a pasar las vacaciones
-                de verano junto con su <strong>tío Stan</strong> , un hombre anciano y gruñón dueño de una trampa para
-                turistas
-                llamada <strong> La Cabaña del Misterio.</strong> </p>
-            <img src="imagenes/gravity%20falls%201.jpg" alt="Imagen de Gravity Falls" loading="lazy">
-            <p>Un día, los mellizos encuentran un diario estampado con una mano de seis dedos y un gran numero 3, el
-                cual contiene información sobre muchas <strong>criaturas paranormales y secretos del pueblo</strong>. A
-                medida que los
-                protagonistas comienzan a explorar Gravity Falls, se enfrentan a <strong>diversos enigmas y
-                    amenazas</strong> , desde
-                gnomos y monstruos hasta conspiraciones que involucran dimensiones paralelas.</p>
-            <img src="imagenes/gravity%20falls%2043.jpg" alt="Imagen de Gravity Falls" loading="lazy">
-            <p>Gravity Falls combina episodios unitarios con una continuidad que evoluciona hasta llevarnos a una
-                narrativa mas compleja que incluye <strong>intrigas, personajes secretos y una serie de acertijos y
-                    códigos</strong>
-                que los espectadores pueden intentar descifrar, sintiéndose parte de la aventura.
-            </p>
-            <img src="imagenes/gravity%20falls%205.png" alt="Imagen de Gravity Falls" loading="lazy">
-        </div>
-    </section>
+    <main>
+        <section id="inicio" class="home-hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Expediente 001 · Gravity Falls, Oregon</p>
+                <h2>Hay secretos escondidos en cada rincón.</h2>
+                <p class="hero-intro"><strong>Gravity Falls</strong> parece un pueblo tranquilo, pero detrás de sus bosques y de la fachada de la Cabaña del Misterio se esconden criaturas extrañas, símbolos y enigmas que nadie logra explicar.</p>
+                <p>Durante las vacaciones de verano, los gemelos <strong>Dipper y Mabel Pines</strong> se quedan con su tío Stan y descubren un diario misterioso que cambiará su forma de ver el mundo.</p>
+                <a class="hero-link" href="teorias.html">Entrá al archivo de teorías <span aria-hidden="true">↗</span></a>
+                <p class="classified-note"><span aria-hidden="true">✦</span> No todo es lo que parece.</p>
+            </div>
+            <figure class="hero-image">
+                <img src="imagenes/gravity%20falls%201.jpg" alt="Escena de Gravity Falls rodeada por el misterio del pueblo">
+                <figcaption>Registro visual · Bosques de Gravity Falls</figcaption>
+            </figure>
+        </section>
 
-    <footer>
-        <p>© Gravity Falls Fanpage | Política de Privacidad | Sitio propiedad de Angelica Violi | Todos los derechos
-            reservados | 2024</p>
+        <section class="home-files" aria-labelledby="home-files-title">
+            <div class="section-heading">
+                <p class="eyebrow">Consultá los archivos</p>
+                <h2 id="home-files-title">¿Por dónde empezamos?</h2>
+            </div>
+            <div class="file-grid">
+                <a class="file-card" href="Personajes.html">
+                    <span class="file-number">01</span>
+                    <span class="file-title">Personajes</span>
+                    <span class="file-description">Conocé a quienes investigan —y a quienes ocultan— los secretos del pueblo.</span>
+                    <span class="file-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="file-card" href="Episodios.html">
+                    <span class="file-number">02</span>
+                    <span class="file-title">Episodios</span>
+                    <span class="file-description">Repasá los casos, las pistas y los acontecimientos de cada temporada.</span>
+                    <span class="file-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="file-card" href="teorias.html">
+                    <span class="file-number">03</span>
+                    <span class="file-title">Teorías</span>
+                    <span class="file-description">Descifrá códigos, conectá pistas y compartí tus propias hipótesis.</span>
+                    <span class="file-arrow" aria-hidden="true">↗</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© Gravity Falls Fanpage · Un archivo de misterios creado por una fan, para fans.</p>
     </footer>
 
-    <script type="text/javascript">
-        function myFunction() {
-            var x = document.getElementById("menu_bar");
-            if (x.className === "") {
-                x.className += "responsive";
-            } else {
-                x.className = "";
-            }
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const menu = document.getElementById("menu_bar");
+
+        if (menuToggle && menu) {
+            menuToggle.addEventListener("click", () => {
+                const isOpen = menu.classList.toggle("is-open");
+                menuToggle.setAttribute("aria-expanded", String(isOpen));
+                menuToggle.setAttribute("aria-label", isOpen ? "Cerrar menú" : "Abrir menú");
+                menuToggle.innerHTML = isOpen
+                    ? '<span aria-hidden="true">×</span>'
+                    : '<span aria-hidden="true">&#9776;</span>';
+            });
+
+            menu.querySelectorAll("a").forEach(link => {
+                link.addEventListener("click", () => {
+                    if (window.matchMedia("(max-width: 900px)").matches) {
+                        menu.classList.remove("is-open");
+                        menuToggle.setAttribute("aria-expanded", "false");
+                        menuToggle.setAttribute("aria-label", "Abrir menú");
+                        menuToggle.innerHTML = '<span aria-hidden="true">&#9776;</span>';
+                    }
+                });
+            });
         }
     </script>
 
